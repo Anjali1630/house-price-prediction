@@ -134,7 +134,7 @@ The project includes:
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/an-ja-li-web/house-price-prediction.git
+git clone https://github.com/Anjali1630/house-price-prediction.git
 cd house-price-prediction
 ```
 
