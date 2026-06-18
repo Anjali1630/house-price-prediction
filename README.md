@@ -1,83 +1,238 @@
- House Price Prediction Project
-A machine learning project that predicts house prices using the California Housing dataset. Built with Python, scikit-learn, and data visualization libraries.
- Project Overview
-This project demonstrates fundamental machine learning concepts by predicting house prices based on various features like median income, house age, and geographic location.
-Features
+# House Price Prediction using Machine Learning
 
-Data Exploration: Comprehensive analysis of the California Housing dataset
-Data Visualization: Interactive charts and correlation analysis
-Machine Learning: Linear regression model for price prediction
-Model Evaluation: Performance metrics and visualization
-Feature Importance: Analysis of which factors most affect house prices
+## Overview
 
-Technologies Used
+This project builds a machine learning model to predict house prices using the California Housing dataset from Scikit-learn. The project demonstrates the complete machine learning workflow, including data exploration, visualization, model training, evaluation, and interpretation of results.
 
-Python 3.11+
-pandas - Data manipulation and analysis
-numpy - Numerical computing
-matplotlib - Data visualization
-seaborn - Statistical data visualization
-scikit-learn - Machine learning library
+The objective is to analyze how factors such as median income, house age, population, and geographic location influence housing prices and use these features to make accurate predictions.
 
- Prerequisites
-Make sure you have Python 3.11+ installed on your system.
- Installation
-Clone this repository:
-bashgit clone https://github.com/yourusername/house-price-prediction.git
+---
+
+## Features
+
+* Exploratory Data Analysis (EDA)
+* Data Visualization using Matplotlib and Seaborn
+* Correlation Analysis
+* Linear Regression Model Training
+* Model Performance Evaluation
+* Feature Importance Analysis
+* Prediction Visualization
+
+---
+
+## Technologies Used
+
+### Programming Language
+
+* Python 3.11+
+
+### Libraries
+
+* Pandas
+* NumPy
+* Matplotlib
+* Seaborn
+* Scikit-learn
+
+---
+
+## Dataset
+
+The project uses the California Housing Dataset provided by Scikit-learn.
+
+### Dataset Statistics
+
+| Attribute       | Value              |
+| --------------- | ------------------ |
+| Total Samples   | 20,640             |
+| Features        | 8                  |
+| Target Variable | Median House Value |
+
+### Features Used
+
+* MedInc (Median Income)
+* HouseAge (Median House Age)
+* AveRooms (Average Rooms)
+* AveBedrms (Average Bedrooms)
+* Population
+* AveOccup (Average Occupancy)
+* Latitude
+* Longitude
+
+---
+
+## Project Workflow
+
+### 1. Data Collection
+
+Loaded the California Housing dataset using Scikit-learn.
+
+### 2. Exploratory Data Analysis
+
+* Examined dataset structure and statistics
+* Identified feature distributions
+* Generated correlation heatmaps
+* Visualized relationships between variables
+
+### 3. Data Preprocessing
+
+* Checked for missing values
+* Prepared features and target variables
+* Split dataset into training and testing sets
+
+### 4. Model Development
+
+Implemented a Linear Regression model using Scikit-learn.
+
+### 5. Model Evaluation
+
+Evaluated model performance using:
+
+* R² Score
+* Mean Squared Error (MSE)
+* Root Mean Squared Error (RMSE)
+
+### 6. Result Interpretation
+
+Analyzed feature impact and visualized prediction performance.
+
+---
+
+## Results
+
+### Model Performance
+
+| Metric              | Score                                |
+| ------------------- | ------------------------------------ |
+| R² Score            | ~0.60                                |
+| Mean Squared Error  | Low                                  |
+| Prediction Accuracy | Approximately 60% Variance Explained |
+
+### Key Insights
+
+* Median Income is the strongest predictor of house prices.
+* Geographic location significantly influences property values.
+* Housing age has a moderate impact on pricing.
+* Population density contributes to housing demand patterns.
+
+---
+
+## Visualizations
+
+The project includes:
+
+* Correlation Heatmap
+* Feature Distribution Plots
+* Scatter Plots
+* Actual vs Predicted Price Visualization
+* Feature Importance Analysis
+
+---
+
+## Installation
+
+### Clone the Repository
+
+```bash
+git clone https://github.com/an-ja-li-web/house-price-prediction.git
 cd house-price-prediction
-Install required packages:
-bashpip install pandas numpy matplotlib seaborn scikit-learn
- Usage
-Run the main script:
-bashpython main.py
- Results
-The model achieves:
-R² Score: ~0.6 (60% accuracy)
-Mean Squared Error: Low prediction error
-Key Insights: Median income is the strongest predictor of house prices
- Dataset Information
-The California Housing dataset contains:
-20,640 samples
-8 features: MedInc, HouseAge, AveRooms, AveBedrms, Population, AveOccup, Latitude, Longitude
-Target: Median house value (in hundreds of thousands of dollars)
- Key Findings
-Median Income has the strongest correlation with house prices
-Geographic location (Latitude/Longitude) significantly impacts prices
-House age has a moderate negative correlation with prices
-Population density affects pricing in urban areas
-📁 Project Structure
+```
+
+### Install Dependencies
+
+```bash
+pip install pandas numpy matplotlib seaborn scikit-learn
+```
+
+---
+
+## Usage
+
+Run the project:
+
+```bash
+python main.py
+```
+
+The script will:
+
+1. Load the dataset
+2. Perform exploratory analysis
+3. Train the model
+4. Evaluate performance
+5. Display visualizations and results
+
+---
+
+## Project Structure
+
+```text
 house-price-prediction/
 │
-├── main.py                 
-├── README.md              
-└── requirements.txt       
- Learning Outcomes
-This project demonstrates:
+├── main.py
+├── README.md
+├── requirements.txt
+└── images/
+    ├── correlation_heatmap.png
+    ├── feature_distribution.png
+    └── prediction_results.png
+```
 
-Data loading and preprocessing
-Exploratory data analysis (EDA)
-Feature correlation analysis
-Linear regression implementation
-Model evaluation and validation
-Data visualization techniques
+---
 
-Future Enhancements
+## Skills Demonstrated
 
- Add more advanced ML models (Random Forest, XGBoost)
- Implement feature engineering
- Add cross-validation
- Create a web interface
- Add model deployment capabilities
+* Data Analysis
+* Data Visualization
+* Statistical Analysis
+* Machine Learning
+* Predictive Modeling
+* Feature Engineering
+* Model Evaluation
+* Python Programming
 
-Contributing
-Feel free to fork this project and submit pull requests for any improvements.
- License
-This project is open source and available under the MIT License.
- Author
-anjali
+---
 
-GitHub: an-ja-li-web
- Acknowledgments
-California Housing dataset from scikit-learn
-Python community for excellent libraries
-AI/ML community for inspiration
+## Future Improvements
+
+* Implement Random Forest Regressor
+* Add XGBoost Regression
+* Perform Hyperparameter Tuning
+* Add Cross Validation
+* Deploy using Streamlit
+* Build REST APIs using FastAPI
+* Containerize with Docker
+* Deploy on Cloud Platforms (AWS/GCP)
+
+---
+
+## Learning Outcomes
+
+Through this project, I gained practical experience in:
+
+* End-to-End Machine Learning Pipelines
+* Exploratory Data Analysis (EDA)
+* Regression Algorithms
+* Model Evaluation Techniques
+* Data Visualization
+* Predictive Analytics
+
+---
+
+## Author
+
+**Anjali Jha**
+
+Artificial Intelligence & Machine Learning Student
+
+GitHub: https://github.com/an-ja-li-web
+
+LinkedIn: [Add Your LinkedIn Profile Link]
+
+---
+
+## Acknowledgments
+
+* California Housing Dataset from Scikit-learn
+* Python Open Source Community
+* Scikit-learn Documentation
