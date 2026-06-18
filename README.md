@@ -221,13 +221,12 @@ Through this project, I gained practical experience in:
 
 ## Author
 
-**Anjali Jha**
+**Anjali **
 
 Artificial Intelligence & Machine Learning Student
 
-GitHub: https://github.com/an-ja-li-web
+GitHub: https://github.com/Anjali1630
 
-LinkedIn: [Add Your LinkedIn Profile Link]
 
 ---
 
